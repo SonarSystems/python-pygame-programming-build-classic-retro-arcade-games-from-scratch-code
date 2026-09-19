@@ -1,0 +1,16 @@
+{
+  "tower_rush": [
+    {"initials": "AAA", "score": 4820},
+    {"initials": "BBB", "score": 3150}
+  ],
+  "settings": {
+    "music_volume": 0.5,
+    "effects_volume": 0.8,
+    "wrap_walls": false
+  },
+  "platformer_progress": {
+    "level_index": 2,
+    "checkpoint_position": [640, 220],
+    "collected_items": ["key_1", "gem_3"]
+  }
+}
