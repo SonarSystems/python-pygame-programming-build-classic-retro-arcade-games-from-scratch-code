@@ -1,3 +1,5 @@
+import pygame
+
 from engine.scene import Scene
 
 WIN_SCORE = 11

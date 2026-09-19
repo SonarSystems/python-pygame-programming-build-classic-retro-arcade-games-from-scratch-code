@@ -1,3 +1,5 @@
+import pygame
+
 def apply_hit_flash(sprite, duration=0.08):
     sprite.flash_timer = duration
 

@@ -1,3 +1,5 @@
+import pygame
+
 class SquashStretch:
     def __init__(self):
         self.scale_x = 1.0

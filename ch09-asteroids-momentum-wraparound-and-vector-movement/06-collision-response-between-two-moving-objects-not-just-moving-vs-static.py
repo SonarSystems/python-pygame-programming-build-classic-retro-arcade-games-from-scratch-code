@@ -1,3 +1,5 @@
+import pygame
+
 def elastic_collision_2d(pos_a, vel_a, mass_a, pos_b, vel_b, mass_b):
     """Returns the new velocities for both objects after an elastic
     collision, using the standard 2D elastic collision formula."""

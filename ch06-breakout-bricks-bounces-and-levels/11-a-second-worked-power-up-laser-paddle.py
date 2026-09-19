@@ -1,3 +1,5 @@
+import pygame
+
 LASER_COOLDOWN = 0.35
 LASER_DURATION = 8.0
 

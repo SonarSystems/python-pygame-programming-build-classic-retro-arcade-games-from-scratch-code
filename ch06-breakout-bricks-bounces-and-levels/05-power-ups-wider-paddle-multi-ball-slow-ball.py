@@ -1,3 +1,5 @@
+import pygame
+
 import random
 
 POWERUP_CHANCE = 0.12

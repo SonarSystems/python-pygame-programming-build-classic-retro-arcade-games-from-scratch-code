@@ -1,3 +1,6 @@
+import pygame
+import time
+
 clock = pygame.time.Clock()
 
 running = True

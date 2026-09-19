@@ -1,3 +1,6 @@
+import pygame
+import random
+
 class BrickFragment:
     def __init__(self, x, y, color):
         self.pos = pygame.Vector2(x, y)

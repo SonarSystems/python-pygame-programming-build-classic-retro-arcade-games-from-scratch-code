@@ -1,3 +1,5 @@
+import os
+
 def validate_level_file(path, required_start_char="P"):
     rows, metadata = load_level_file(path)
     problems = []

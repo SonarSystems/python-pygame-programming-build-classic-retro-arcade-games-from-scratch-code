@@ -1,3 +1,5 @@
+import pygame
+
 class Enemy(Entity):
     def __init__(self, path, health, speed, reward, assets):
         self.path = path

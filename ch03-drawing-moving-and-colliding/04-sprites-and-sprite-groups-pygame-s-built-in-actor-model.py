@@ -1,3 +1,5 @@
+import pygame
+
 all_sprites = pygame.sprite.Group()
 ball = Ball(400, 300)
 all_sprites.add(ball)

@@ -1,3 +1,5 @@
+import pygame
+
 def bounce_off_paddle_with_curve(self, paddle_rect, paddle_velocity):
     offset = (self.rect.centery - paddle_rect.centery) / (paddle_rect.height / 2)
     offset = max(-1.0, min(1.0, offset))

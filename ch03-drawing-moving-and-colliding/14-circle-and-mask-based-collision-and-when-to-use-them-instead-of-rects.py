@@ -1,3 +1,5 @@
+import pygame
+
 def masks_collide(sprite_a, sprite_b):
     mask_a = pygame.mask.from_surface(sprite_a.image)
     mask_b = pygame.mask.from_surface(sprite_b.image)

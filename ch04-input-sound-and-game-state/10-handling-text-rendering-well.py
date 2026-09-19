@@ -1,3 +1,5 @@
+import pygame
+
 class ScoreDisplay:
     def __init__(self):
         self.font = pygame.font.Font(None, 36)  # created once

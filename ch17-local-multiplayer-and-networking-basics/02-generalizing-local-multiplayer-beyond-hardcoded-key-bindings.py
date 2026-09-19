@@ -1,3 +1,5 @@
+import pygame
+
 class InputBinding:
     def __init__(self, up, down, left=None, right=None, action=None):
         self.up = up

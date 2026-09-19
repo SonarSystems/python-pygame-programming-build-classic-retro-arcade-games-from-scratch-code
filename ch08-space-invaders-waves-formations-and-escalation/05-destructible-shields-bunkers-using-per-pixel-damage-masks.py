@@ -1,3 +1,5 @@
+import pygame
+
 SHIELD_BLOCK_SIZE = 4
 
 

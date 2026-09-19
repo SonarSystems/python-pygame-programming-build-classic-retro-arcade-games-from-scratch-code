@@ -1,3 +1,5 @@
+import pygame
+
 def _choose_direction(self, pacman):
     col, row = self._current_tile()
     target = self._current_target(pacman)

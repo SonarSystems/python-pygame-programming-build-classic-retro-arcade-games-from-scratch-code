@@ -1,3 +1,5 @@
+import pygame
+
 class ArcadeCollectionMenu(Scene):
     def __init__(self, app):
         super().__init__()

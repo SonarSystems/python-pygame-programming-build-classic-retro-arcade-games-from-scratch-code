@@ -1,3 +1,5 @@
+import pygame
+
 from engine.state_machine import StateMachine
 
 GHOST_SPEED = 108.0

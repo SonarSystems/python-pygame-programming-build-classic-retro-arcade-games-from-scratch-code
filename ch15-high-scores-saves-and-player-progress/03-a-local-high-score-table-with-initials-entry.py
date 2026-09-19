@@ -1,3 +1,5 @@
+import pygame
+
 class InitialsEntryScene(Scene):
     def __init__(self, app, score, high_scores):
         super().__init__()

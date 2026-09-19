@@ -1,3 +1,5 @@
+import pygame
+
 import random
 
 BALL_SIZE = 16

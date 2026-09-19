@@ -1,3 +1,5 @@
+import pygame
+
 def draw_debug_targets(ghosts, maze, surface, pacman):
     for ghost in ghosts:
         target = ghost._current_target(pacman)

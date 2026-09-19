@@ -1,3 +1,5 @@
+import pygame
+
 pygame.mixer.init()
 hit_sound = pygame.mixer.Sound("assets/sounds/hit.wav")
 

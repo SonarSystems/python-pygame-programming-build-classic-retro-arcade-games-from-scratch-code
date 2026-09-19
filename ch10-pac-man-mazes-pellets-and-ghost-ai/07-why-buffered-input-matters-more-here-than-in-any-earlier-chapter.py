@@ -1,3 +1,5 @@
+import pygame
+
 def update_unbuffered(self, dt):
     if self._at_tile_center():
         keys = pygame.key.get_pressed()

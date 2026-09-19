@@ -1,3 +1,5 @@
+import pygame
+
 def check_checkpoints(player, checkpoints, level_state):
     for checkpoint in checkpoints:
         if player.rect.colliderect(checkpoint.rect) and not checkpoint.activated:

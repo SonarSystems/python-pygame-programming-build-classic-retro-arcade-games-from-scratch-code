@@ -1,3 +1,5 @@
+import pygame
+
 class LayeredScene(Scene):
     def __init__(self):
         super().__init__()

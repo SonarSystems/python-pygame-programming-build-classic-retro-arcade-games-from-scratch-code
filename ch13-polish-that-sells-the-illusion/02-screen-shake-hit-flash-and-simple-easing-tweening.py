@@ -1,3 +1,6 @@
+import pygame
+import random
+
 class ScreenShake:
     def __init__(self):
         self.trauma = 0.0

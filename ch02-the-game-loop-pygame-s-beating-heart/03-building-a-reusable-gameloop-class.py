@@ -1,3 +1,5 @@
+import time
+
 """A reusable, frame-rate-independent game loop.
 
 Any game built in this book supplies a `Scene`-like object with

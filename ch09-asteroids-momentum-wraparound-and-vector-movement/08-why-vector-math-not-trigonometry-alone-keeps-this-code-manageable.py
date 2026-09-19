@@ -1,3 +1,5 @@
+import math
+
 # Without Vector2 — considerably more error-prone:
 thrust_x = math.cos(math.radians(angle - 90))
 thrust_y = math.sin(math.radians(angle - 90))

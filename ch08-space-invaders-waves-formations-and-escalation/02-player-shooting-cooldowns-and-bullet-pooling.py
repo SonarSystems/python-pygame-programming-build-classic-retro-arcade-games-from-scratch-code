@@ -1,3 +1,5 @@
+import pygame
+
 class Player(Entity):
     def __init__(self, x, y, assets):
         image = assets.placeholder_image((40, 20), (80, 200, 120))

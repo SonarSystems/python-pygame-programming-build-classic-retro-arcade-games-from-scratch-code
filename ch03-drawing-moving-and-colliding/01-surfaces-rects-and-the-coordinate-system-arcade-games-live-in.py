@@ -1,3 +1,5 @@
+import pygame
+
 player_rect = pygame.Rect(100, 500, 40, 20)  # x, y, width, height
 
 print(player_rect.x, player_rect.y)       # top-left corner

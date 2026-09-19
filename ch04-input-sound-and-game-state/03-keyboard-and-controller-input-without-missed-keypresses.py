@@ -1,3 +1,5 @@
+import pygame
+
 pygame.joystick.init()
 joysticks = [pygame.joystick.Joystick(i)
              for i in range(pygame.joystick.get_count())]

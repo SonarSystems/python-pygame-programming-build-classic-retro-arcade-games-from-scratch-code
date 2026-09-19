@@ -1,3 +1,5 @@
+import pygame
+
 class Camera:
     def __init__(self, width, height, level_width, level_height):
         self.offset = pygame.Vector2(0, 0)

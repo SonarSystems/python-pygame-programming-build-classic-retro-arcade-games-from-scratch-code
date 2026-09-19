@@ -1,3 +1,5 @@
+import pygame
+
 class Tower(Entity):
     def __init__(self, x, y, tower_range, damage, fire_rate, assets):
         image = assets.placeholder_image((30, 30), (80, 160, 220))

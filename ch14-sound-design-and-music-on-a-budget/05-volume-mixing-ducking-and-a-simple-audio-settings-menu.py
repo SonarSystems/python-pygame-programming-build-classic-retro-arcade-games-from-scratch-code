@@ -1,3 +1,5 @@
+import pygame
+
 class AudioSettings:
     def __init__(self):
         self.music_volume = 0.5

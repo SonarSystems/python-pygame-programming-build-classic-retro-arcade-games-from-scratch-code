@@ -1,3 +1,6 @@
+import pygame
+import math
+
 import random
 
 ASTEROID_SIZES = {"large": (48, 2), "medium": (28, 1), "small": (16, 0)}

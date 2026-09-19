@@ -1,3 +1,6 @@
+import pygame
+import random
+
 class ZigzagEnemy(Enemy):
     """A rare enemy type that breaks from the formation briefly to dive
     toward the player before rejoining, adding an unpredictable threat

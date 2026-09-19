@@ -1,3 +1,5 @@
+import pygame
+
 class Pacman(Entity):
     def __init__(self, col, row, maze, assets):
         image = assets.placeholder_image((TILE_SIZE - 4, TILE_SIZE - 4), (240, 220, 40))

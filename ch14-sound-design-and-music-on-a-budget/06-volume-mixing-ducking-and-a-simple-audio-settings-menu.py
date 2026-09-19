@@ -1,3 +1,6 @@
+import pygame
+import time
+
 def duck_music(audio_settings, duration=0.6):
     original = audio_settings.music_volume
     pygame.mixer.music.set_volume(original * 0.3)

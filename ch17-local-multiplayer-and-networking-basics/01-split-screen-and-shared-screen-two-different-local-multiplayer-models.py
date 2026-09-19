@@ -1,3 +1,5 @@
+import pygame
+
 def render_split_screen(main_surface, scene, camera_a, camera_b):
     half_width = main_surface.get_width() // 2
     height = main_surface.get_height()

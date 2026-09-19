@@ -1,3 +1,5 @@
+import pygame
+
 class SecondPlayerPaddle(Paddle):
     def update(self, dt):
         keys = pygame.key.get_pressed()

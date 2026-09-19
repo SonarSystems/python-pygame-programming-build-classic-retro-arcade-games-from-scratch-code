@@ -1,3 +1,5 @@
+import time
+
 """A minimal Pong client — sends input to the server, renders whatever
 authoritative state the server most recently broadcast."""
 import json

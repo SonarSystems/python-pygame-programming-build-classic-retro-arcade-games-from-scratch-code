@@ -1,3 +1,5 @@
+import json
+
 def load_level_file(path):
     """Returns (rows, metadata) — the same shape every game's own
     build_level()-style function already expects as its `rows` input,

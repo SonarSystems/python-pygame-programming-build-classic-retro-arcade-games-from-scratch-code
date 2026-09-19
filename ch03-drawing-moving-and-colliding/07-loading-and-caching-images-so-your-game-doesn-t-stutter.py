@@ -1,3 +1,5 @@
+import pygame
+
 _image_cache = {}
 
 def load_image(path):

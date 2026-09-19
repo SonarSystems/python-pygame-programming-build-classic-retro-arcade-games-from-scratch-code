@@ -1,3 +1,5 @@
+import pygame
+
 class BlinkingSquareScene:
     def __init__(self):
         self.x = 100.0

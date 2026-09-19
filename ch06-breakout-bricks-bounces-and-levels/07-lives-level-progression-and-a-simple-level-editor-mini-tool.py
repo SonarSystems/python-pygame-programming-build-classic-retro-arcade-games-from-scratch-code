@@ -1,3 +1,5 @@
+import random
+
 STARTING_LIVES = 3
 
 def handle_ball_lost(self):

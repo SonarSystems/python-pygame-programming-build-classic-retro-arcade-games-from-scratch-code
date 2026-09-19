@@ -1,3 +1,6 @@
+import pygame
+import random
+
 class UFO(Entity):
     def __init__(self, x, y, player, assets):
         image = assets.placeholder_image((34, 18), (200, 90, 200))

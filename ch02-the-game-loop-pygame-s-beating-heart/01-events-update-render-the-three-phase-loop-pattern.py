@@ -1,3 +1,5 @@
+import pygame
+
 running = True
 while running:
     # 1. Process input

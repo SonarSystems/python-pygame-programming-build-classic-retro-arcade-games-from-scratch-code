@@ -1,3 +1,7 @@
+import pygame
+import os
+import time
+
 def run_editor(grid_width, grid_height, tile_definitions, save_dir):
     pygame.init()
     screen = pygame.display.set_mode((grid_width * CELL_SIZE + 160,

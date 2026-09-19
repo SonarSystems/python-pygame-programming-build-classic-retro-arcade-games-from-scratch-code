@@ -1,3 +1,5 @@
+import pygame
+
 def draw_snake(surface, snake, assets):
     for i, (col, row) in enumerate(snake.body):
         x, y = col * GRID_SIZE, row * GRID_SIZE

@@ -1,3 +1,5 @@
+import pygame
+
 hits = pygame.sprite.spritecollide(self.ball, self.bricks, dokill=False)
 if hits:
     brick = hits[0]
