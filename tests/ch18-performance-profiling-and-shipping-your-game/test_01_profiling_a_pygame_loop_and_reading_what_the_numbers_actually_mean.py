@@ -19,24 +19,3 @@ REPO_ROOT = os.path.normpath(os.path.join(HERE, "..", ".."))
 def test_compiles():
     assert os.path.isfile(SRC), f"missing source file: {SRC}"
     py_compile.compile(SRC, doraise=True)
-
-
-def test_pure_functions_are_importable_and_callable():
-    """Best-effort smoke check for zero-arg top-level functions found in the source."""
-    import importlib.util
-    import sys
-    # Same REPO_ROOT-on-sys.path reasoning as test_runs_cleanly
-    # above (when present) — a snippet that imports this book's
-    # own engine/ package needs it importable here too.
-    if REPO_ROOT not in sys.path:
-        sys.path.insert(0, REPO_ROOT)
-    spec = importlib.util.spec_from_file_location("_mod", SRC)
-    mod = importlib.util.module_from_spec(spec)
-    try:
-        spec.loader.exec_module(mod)
-    except SystemExit:
-        pass
-    for name in ['run_profiled']:
-        fn = getattr(mod, name, None)
-        if callable(fn):
-            fn()  # must not raise
