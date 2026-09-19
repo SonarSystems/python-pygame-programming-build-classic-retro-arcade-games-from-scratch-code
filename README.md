@@ -28,6 +28,15 @@ This is the official companion code repository for **Python Pygame Programming**
 | 18 | Performance, Profiling, and Shipping Your Game | [`ch18-performance-profiling-and-shipping-your-game/`](ch18-performance-profiling-and-shipping-your-game/) — 6 files |
 | 19 | Packaging and Distributing Your Arcade Collection | [`ch19-packaging-and-distributing-your-arcade-collection/`](ch19-packaging-and-distributing-your-arcade-collection/) — 2 files |
 
+## The `engine/` package
+
+Several early chapters build up a small, reusable engine — classes shared across every later chapter's examples rather than redefined each time. This repo assembles those classes into a real, importable `engine/` package at the repo root (mirroring the project layout the book itself has you build), so `from engine.game_loop import GameLoop`-style imports in later chapters resolve exactly like they do if you followed along and built the same structure yourself. Run any example that imports from `engine/` from the repo root (or add the repo root to your `PYTHONPATH`) for the import to work:
+
+```bash
+cd python-pygame-programming-build-classic-retro-arcade-games-from-scratch-code
+python3 chNN-.../NN-example.py
+```
+
 ## Prerequisites
 
 - **Json**
