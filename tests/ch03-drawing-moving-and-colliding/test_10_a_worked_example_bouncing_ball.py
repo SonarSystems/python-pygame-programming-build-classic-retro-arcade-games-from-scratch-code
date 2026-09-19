@@ -13,6 +13,7 @@ import py_compile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "../../ch03-drawing-moving-and-colliding/10-a-worked-example-bouncing-ball.py"))
+REPO_ROOT = os.path.normpath(os.path.join(HERE, "..", ".."))
 
 
 def test_compiles():

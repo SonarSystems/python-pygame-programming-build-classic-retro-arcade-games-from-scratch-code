@@ -14,6 +14,7 @@ import py_compile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "../../ch10-pac-man-mazes-pellets-and-ghost-ai/02-representing-a-maze-as-a-tile-grid-loaded-from-a-text-map.py"))
+REPO_ROOT = os.path.normpath(os.path.join(HERE, "..", ".."))
 
 
 def test_compiles():

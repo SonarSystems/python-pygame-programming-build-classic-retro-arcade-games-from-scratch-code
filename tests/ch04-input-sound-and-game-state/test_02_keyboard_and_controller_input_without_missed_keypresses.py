@@ -14,6 +14,7 @@ import py_compile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "../../ch04-input-sound-and-game-state/02-keyboard-and-controller-input-without-missed-keypresses.py"))
+REPO_ROOT = os.path.normpath(os.path.join(HERE, "..", ".."))
 
 
 def test_compiles():

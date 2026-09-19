@@ -14,6 +14,7 @@ import py_compile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "../../ch08-space-invaders-waves-formations-and-escalation/01-designing-an-enemy-formation-grid-and-synchronized-marching-movement.py"))
+REPO_ROOT = os.path.normpath(os.path.join(HERE, "..", ".."))
 
 
 def test_compiles():

@@ -13,6 +13,7 @@ import py_compile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "../../ch02-the-game-loop-pygame-s-beating-heart/01-events-update-render-the-three-phase-loop-pattern.py"))
+REPO_ROOT = os.path.normpath(os.path.join(HERE, "..", ".."))
 
 
 def test_compiles():

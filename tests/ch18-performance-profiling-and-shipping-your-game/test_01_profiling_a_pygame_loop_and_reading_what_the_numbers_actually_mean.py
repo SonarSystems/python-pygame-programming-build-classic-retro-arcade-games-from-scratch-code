@@ -13,6 +13,7 @@ import py_compile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "../../ch18-performance-profiling-and-shipping-your-game/01-profiling-a-pygame-loop-and-reading-what-the-numbers-actually-mean.py"))
+REPO_ROOT = os.path.normpath(os.path.join(HERE, "..", ".."))
 
 
 def test_compiles():
@@ -23,6 +24,12 @@ def test_compiles():
 def test_pure_functions_are_importable_and_callable():
     """Best-effort smoke check for zero-arg top-level functions found in the source."""
     import importlib.util
+    import sys
+    # Same REPO_ROOT-on-sys.path reasoning as test_runs_cleanly
+    # above (when present) — a snippet that imports this book's
+    # own engine/ package needs it importable here too.
+    if REPO_ROOT not in sys.path:
+        sys.path.insert(0, REPO_ROOT)
     spec = importlib.util.spec_from_file_location("_mod", SRC)
     mod = importlib.util.module_from_spec(spec)
     try:
