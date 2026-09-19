@@ -11,12 +11,19 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.normpath(os.path.join(HERE, "../../ch02-the-game-loop-pygame-s-beating-heart/06-a-second-worked-example-two-independent-moving-shapes.py"))
+# code/tests/ch<N>-.../test_x.py -> code/ (two levels up) is the repo
+# root, which is where a shared engine/ package (if this book has one)
+# lives — putting it on PYTHONPATH lets `from engine.X import Y`
+# resolve the same way it does for a reader who cloned the whole repo
+# and ran the example from its own chapter folder.
+REPO_ROOT = os.path.normpath(os.path.join(HERE, "..", ".."))
 
 
 def test_runs_cleanly():
     assert os.path.isfile(SRC), f"missing source file: {SRC}"
+    env = dict(os.environ, PYTHONPATH=REPO_ROOT)
     result = subprocess.run([sys.executable, SRC], capture_output=True,
-                            text=True, timeout=30)
+                            text=True, timeout=30, env=env)
     assert result.returncode == 0, (
         f"{SRC} exited {result.returncode}:\n{result.stderr}"
     )
